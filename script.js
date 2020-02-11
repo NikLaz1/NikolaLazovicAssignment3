@@ -62,7 +62,7 @@ function generatePassword() {
   }
 
   for (var i = 0; i < passwordLength ; i++) {
-    var randomIdx = Math.random()*allowedCharacters.length;
+    var randomIdx = Math.random() * (allowedCharacters.length-1);
     randomIdx = Math.round(randomIdx);
     password = password + allowedCharacters[randomIdx];
   }
